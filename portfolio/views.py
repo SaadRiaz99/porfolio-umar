@@ -1,6 +1,5 @@
-from django.shortcuts import render , requests , redirect
+from django.shortcuts import render , redirect , HttpResponse
 
 # Create your views here.
 def home():
-    return render(requests , "home.html")
-
+    return render(request , 'home.html')
