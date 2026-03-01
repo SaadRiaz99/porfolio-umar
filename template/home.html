@@ -114,8 +114,13 @@
 
         <div class="contact-grid">
 
-            <!-- Contact Form -->
+            
             <div class="contact-form-wrapper">
+                {% if success %}
+                <div class="alert alert-success">
+                    Thank you! Your message has been sent successfully.
+                </div>
+                {% endif %}
                 <form method="POST" action="" class="contact-form">
                     {% csrf_token %}
                     <input type="text" name="name" placeholder="Your Name" required>
