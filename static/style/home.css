@@ -229,3 +229,48 @@ body {
     transform: translateY(-6px);
     border-color: #b91c1c;
 }
+/* ========================
+   Contact Section
+======================== */
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #121214 0%,
+        #18181c 50%,
+        #1a0f12 100%
+    );
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background: #161618;
+    border: 1px solid #2a2023;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-card h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: #b91c1c;
+}
