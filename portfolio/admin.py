@@ -12,3 +12,19 @@ admin.site.site_title = "Portfolio Admin"
 admin.site.index_title = "Welcome to My Portfolio Admin"
 
 admin.site.register(Contact_message)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
