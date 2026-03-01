@@ -9,7 +9,9 @@ import os
 # -----------------------------
 # Base Directory
 # -----------------------------
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+import sys
+sys.path.append(str(BASE_DIR))
 
 # -----------------------------
 # Security
@@ -61,7 +63,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
 
         # Global templates folder
-        'DIRS': [BASE_DIR / "templates"],
+        'DIRS': [BASE_DIR / "template"],
 
         'APP_DIRS': True,
 
@@ -86,7 +88,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'project' / 'db.sqlite3',
     }
 }
 
