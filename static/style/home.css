@@ -229,9 +229,7 @@ body {
     transform: translateY(-6px);
     border-color: #b91c1c;
 }
-/* ========================
-   Contact Section
-======================== */
+/* Contact Section */
 .contact-section {
     background: linear-gradient(
         135deg,
@@ -239,19 +237,64 @@ body {
         #18181c 50%,
         #1a0f12 100%
     );
+    padding: 80px 20px;
 }
 
-.contact-wrapper {
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-form-wrapper {
+    background: #161618;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #2a2023;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #2a2023;
+    background: #1c1c1f;
+    color: #e5e5e5;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background: #b91c1c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ff4d4d;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact-card {
     background: #161618;
     border: 1px solid #2a2023;
-    padding: 25px;
+    padding: 20px;
     border-radius: 8px;
     text-align: center;
     transition: 0.3s ease;
@@ -273,4 +316,11 @@ body {
 .contact-card:hover {
     transform: translateY(-6px);
     border-color: #b91c1c;
+}
+
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 }

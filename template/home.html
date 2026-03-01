@@ -108,38 +108,44 @@
     </div>
 </section>
 
- <section id="contact" class="section contact-section">
+<section id="contact" class="section contact-section">
     <div class="container">
         <h2 class="section-title">Contact Me</h2>
 
-        <div class="contact-wrapper">
+        <div class="contact-grid">
 
-            <div class="contact-card">
-                <h4>Email</h4>
-                <a href="mailto:malik.umar.riaz.99@gmail.com">
-                    malik.umar.riaz.99@gmail.com
-                </a>
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form method="POST" action="" class="contact-form">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
 
-            <div class="contact-card">
-                <h4>GitHub</h4>
-                <a href="https://github.com/um3600" target="_blank">
-                    github.com/um3600
-                </a>
-            </div>
+            <div class="contact-links">
+                <div class="contact-card">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/um3600" target="_blank">
+                        github.com/um3600
+                    </a>
+                </div>
 
-            <div class="contact-card">
-                <h4>LinkedIn</h4>
-                <a href="#" target="_blank">
-                    Add Your LinkedIn Profile
-                </a>
-            </div>
+                <div class="contact-card">
+                    <h4>LinkedIn</h4>
+                    <a href="#" target="_blank">
+                        Add Your LinkedIn Profile
+                    </a>
+                </div>
 
-            <div class="contact-card">
-                <h4>WhatsApp</h4>
-                <a href="https://wa.me/923XXXXXXXXX" target="_blank">
-                    Chat on WhatsApp
-                </a>
+                <div class="contact-card">
+                    <h4>WhatsApp</h4>
+                    <a href="https://wa.me/923XXXXXXXXX" target="_blank">
+                        Chat on WhatsApp
+                    </a>
+                </div>
             </div>
 
         </div>
