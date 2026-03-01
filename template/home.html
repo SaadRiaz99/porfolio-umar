@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="{% static 'style/home.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -39,26 +39,114 @@
     </header>
 
     <!-- Sections -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Write about yourself here.</p>
-        </div>
-    </section>
+     <section id="about" class="section about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
 
-    <section id="projects" class="section bg-light">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>Showcase your work here.</p>
-        </div>
-    </section>
+        <div class="about-content">
+            <p>
+                I'm <strong>Umar Bin Riaz</strong>, a passionate Frontend Developer focused on 
+                building modern, responsive, and user-friendly web applications.
+                I enjoy transforming ideas into elegant digital experiences.
+            </p>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Your contact info here.</p>
+            <p>
+                I work with HTML, CSS, Bootstrap, and JavaScript, and I’m expanding 
+                my skills in Django to build complete full-stack applications. 
+                Clean code, performance, and design consistency are my priorities.
+            </p>
+
+            <p>
+                My goal is to continuously grow as a developer and contribute to 
+                impactful projects that deliver real value.
+            </p>
         </div>
-    </section>
+    </div>
+
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Web Tutorial</h3>
+                <p>A beginner-friendly web tutorial covering core HTML, CSS basics & examples.</p>
+                <a href="https://github.com/um3600/web_tutorial" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>E-COM</h3>
+                <p>An E-commerce shop project with product listings, cart functionality & responsive design.</p>
+                <a href="https://github.com/um3600/E-COM" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Colorlid</h3>
+                <p>A color palette/design tool to explore and use custom color combinations.</p>
+                <a href="https://github.com/um3600/colorlid" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Deen-Point</h3>
+                <p>A project showcasing your web design and UI skills.</p>
+                <a href="https://github.com/um3600/Deen-Point" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>UBR-College</h3>
+                <p>A college website project focusing on layout and navigation.</p>
+                <a href="https://github.com/um3600/UBR-College" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Toon-Blaste</h3>
+                <p>A fun interactive web project/game illustrating your creative skills.</p>
+                <a href="https://github.com/um3600/Toon-Blaste" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+ <section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-card">
+                <h4>Email</h4>
+                <a href="mailto:malik.umar.riaz.99@gmail.com">
+                    malik.umar.riaz.99@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h4>GitHub</h4>
+                <a href="https://github.com/um3600" target="_blank">
+                    github.com/um3600
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h4>LinkedIn</h4>
+                <a href="#" target="_blank">
+                    Add Your LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/923XXXXXXXXX" target="_blank">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
